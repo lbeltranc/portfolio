@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import myPicture from '../images/me.jpg';
 import projectPicture from '../images/movie-app.jpg';
+import { NavLink } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 const Home = (props) => {
     
@@ -8,7 +10,7 @@ const Home = (props) => {
     return (
         <main>
             <section className="welcome-message" id="welcome-message">
-                <h1>Welcome</h1>
+                {/* <Banner /> */}
             </section>
             <section className="about" id="about">
                 <h2>About</h2>
@@ -37,7 +39,7 @@ const Home = (props) => {
                         Aliquam quis orci a ipsum blandit aliquet a in lorem. Etiam sem ante, pulvinar in nisl sit amet, fringilla suscipit erat. Cras pulvinar consequat nisl, vel varius ipsum faucibus non. Morbi id molestie tellus. Nullam sit amet fringilla quam, eu commodo sem. Aliquam iaculis nec ante ac gravida. Suspendisse tortor lorem, bibendum vel leo at, fermentum molestie tellus. Donec lacinia, turpis a sodales imperdiet, orci nisi aliquet nisl, at rhoncus nibh nibh vitae orci. Vivamus ligula sapien, scelerisque vitae quam nec, faucibus auctor nisl. Cras efficitur erat ut velit aliquam fermentum.
                     </p>
                     <button className="details-btn">
-                        More Details
+                        <NavLink className="more-details" to='/project-single'>More Details</NavLink>
                     </button>
                     <button className="live-btn">
                         Live Version

@@ -1,0 +1,12 @@
+ nav {
+    width: 100%;
+    ul {
+        @include flatten(true, false);
+        display: flex;
+        width: 30%;
+    }
+    li {
+        flex: 1;
+    }
+
+}

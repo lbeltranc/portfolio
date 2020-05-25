@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.png';
 
 const Header = () => (
 	<header>
     	<Link to={'/'}>
-			<h1>Logo</h1>
-			{/* <img src={logo} alt="logo" /> */}
+			<img src={logo} alt="logo" className="logo" />
 		</Link>
 	</header>
 );
