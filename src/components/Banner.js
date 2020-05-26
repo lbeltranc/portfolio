@@ -21,12 +21,6 @@ const Banner = () => (
                 </ul>
         </div >
     </div>
-	// <div className="StreamsHero-image">
-    //     <div className="StreamsHero-content">
-    //         <h2 className="StreamsHero-header">Welcome</h2>
-    //         <p className="StreamsHero-blurb">tututut</p>
-    //     </div>
-    // </div>
 );
 
 

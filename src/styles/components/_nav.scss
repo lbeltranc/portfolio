@@ -1,12 +1,52 @@
  nav {
     width: 100%;
+    text-align: center;
+
+    @include mq(em(590)){
+        width: 500px;
+        margin-top: 20px;
+    }
+
+    &.display-menu {
+        ul {
+            display: block;
+        }
+    }
     ul {
         @include flatten(true, false);
-        display: flex;
-        width: 30%;
+        display: none;
+
+        @include mq(em(590)){
+            display: flex;
+        }
+    }
+    a {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:after {
+            position: absolute;
+            content: "";
+            height: .1em;
+            top: 100%;
+            background: $darkRed;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            transition: transform .5s cubic-bezier(.95, .05, .795, .035);
+        }
+          
+        &:hover::after {
+            transition-timing-function: cubic-bezier(.19, 1, .22, 1);  
+            transform: scaleX(1);
+        }
     }
     li {
+      margin-bottom: 5px;  
+      @include mq(em(590)){
         flex: 1;
+    }
     }
 
 }
