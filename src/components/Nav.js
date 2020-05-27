@@ -9,9 +9,9 @@ const Nav = (props) => {
         <nav className={props.openMenu && "display-menu"}>
             <ul>
                 <li><NavLink to={'/'} exact>Home</NavLink></li>
-                <li><Link smooth to="/#about">About</Link></li>
-                <li><Link smooth to="/#projects">Projects</Link></li>
-                <li><Link smooth to="/#contact">Contact</Link></li>
+                <li><Link smooth to="/#about" >About</Link></li>
+                <li><Link smooth to="/#projects" >Projects</Link></li>
+                <li><Link smooth to="/#contact" >Contact</Link></li>
             </ul>
         </nav>
     );

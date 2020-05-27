@@ -8,12 +8,11 @@ import PageNotFound from '../components/PageNotFound';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import Hamburger from '../components/Hamburguer';
+import Welcome from '../components/Welcome';
 
 const AppRouter = () => {
 
 	const [openMenu, setOpenMenu] = useState(false);
-
-    
 
 	return (
 		<Router>
@@ -26,8 +25,8 @@ const AppRouter = () => {
 						<Hamburger openMenu={openMenu} setOpenMenu={setOpenMenu}/>
 					</div>
 					<Nav openMenu={openMenu}/>
+					<Welcome />
 				</header>
-				
 				<Switch>
 					<Route path={'/'} exact><Home /></Route>
 					<Route path={'/project-single'} exact><ProjectSingle /></Route>

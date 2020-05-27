@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import myPicture from '../images/me.jpg';
 import projectPicture from '../images/movie-app.jpg';
 import { NavLink } from 'react-router-dom';
-import Banner from '../components/Banner';
+
 
 const Home = (props) => {
     
 
     return (
         <main>
-            <section className="welcome-message" id="welcome-message">
-                {/* <Banner /> */}
-            </section>
+            
             <section className="about" id="about">
                 <h2>About</h2>
                 <img className="my-pciture" src={myPicture} alt="me" />
