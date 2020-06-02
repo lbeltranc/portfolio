@@ -17,7 +17,7 @@ const Hamburguer = (props) => {
             onClick={handleHamburgerMenu}
             active={props.openMenu}
             burger="spin"
-            color="#290000"
+            color="#da9b9b"
             hoverOpacity={0.8}
             scale={0.8}
         />

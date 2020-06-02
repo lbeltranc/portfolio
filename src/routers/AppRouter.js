@@ -8,7 +8,6 @@ import PageNotFound from '../components/PageNotFound';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import Hamburger from '../components/Hamburguer';
-import Welcome from '../components/Welcome';
 
 const AppRouter = () => {
 
@@ -25,7 +24,6 @@ const AppRouter = () => {
 						<Hamburger openMenu={openMenu} setOpenMenu={setOpenMenu}/>
 					</div>
 					<Nav openMenu={openMenu}/>
-					<Welcome />
 				</header>
 				<Switch>
 					<Route path={'/'} exact><Home /></Route>

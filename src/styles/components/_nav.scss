@@ -1,7 +1,7 @@
  nav {
     width: 100%;
     text-align: right;
-    @include mq(em(590)){
+    @include mq(em(700)){
         width: 500px;
     }
 
@@ -9,14 +9,14 @@
         ul {
             display: block;
             position: absolute;
-            right: 30px;
+            right: 50px;
         }
     }
     ul {
         @include flatten(true, false);
         display: none;
 
-        @include mq(em(590)){
+        @include mq(em(700)){
             display: flex;
         }
     }
@@ -24,12 +24,13 @@
         position: relative;
         text-transform: uppercase;
         font-weight: 700;
+        color: $lightRed;
         &:after {
             position: absolute;
             content: "";
             height: .1em;
             top: 100%;
-            background: $darkRed;
+            background: $greyred;
             z-index: -1;
             left: 0;
             right: 0;
@@ -43,9 +44,9 @@
         }
     }
     li {
-      @include mq(em(590)){
-        flex: 1;
-    }
+        @include mq(em(700)){
+            flex: 1;
+        }
     }
 
 }

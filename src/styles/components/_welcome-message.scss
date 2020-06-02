@@ -1,15 +1,18 @@
 .welcome-message{
-    // position: absolute;
-    // top: 0;
-    // right: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 4em;
+    color: $lightRed;
+    background-color: $black;
+    @include mq(em(700)){
+        font-size: 5em;
+    }
     
-    font-size: 5em;
     .Typewriter{
         width: 80%;
+        margin-left: 10%;
     }
 }
