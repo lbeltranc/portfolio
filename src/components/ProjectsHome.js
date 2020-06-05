@@ -15,13 +15,11 @@ const ProjectsHome = () => {
                     <p>
                         Aliquam quis orci a ipsum blandit aliquet a in lorem. Etiam sem ante, pulvinar in nisl sit amet, fringilla suscipit erat. Cras pulvinar consequat nisl, vel varius ipsum faucibus non. Morbi id molestie tellus. Nullam sit amet fringilla quam, eu commodo sem. Aliquam iaculis nec ante ac gravida. Suspendisse tortor lorem, bibendum vel leo at, fermentum molestie tellus. Donec lacinia, turpis a sodales imperdiet, orci nisi aliquet nisl, at rhoncus nibh nibh vitae orci. Vivamus ligula sapien, scelerisque vitae quam nec, faucibus auctor nisl. Cras efficitur erat ut velit aliquam fermentum.
                     </p>
+                    <p className="tools-used"> javascript, css</p>
                     <div className="btn-container">
-                        <button className="details-btn">
-                            <NavLink className="more-details" to='/project-single'>More Details</NavLink>
-                        </button>
-                        <button className="live-btn">
-                            <a href="#0">Live Version</a>
-                        </button>
+                        <NavLink className="btn more-details" to='/project-single'>More Details</NavLink>
+                        <a className="btn" href="#0">Live Version</a>
+
                     </div>
                 </div>
             </div>
@@ -35,12 +33,8 @@ const ProjectsHome = () => {
                         Aliquam quis orci a ipsum blandit aliquet a in lorem. Etiam sem ante, pulvinar in nisl sit amet, fringilla suscipit erat. Cras pulvinar consequat nisl, vel varius ipsum faucibus non. Morbi id molestie tellus. Nullam sit amet fringilla quam, eu commodo sem. Aliquam iaculis nec ante ac gravida. Suspendisse tortor lorem, bibendum vel leo at, fermentum molestie tellus. Donec lacinia, turpis a sodales imperdiet, orci nisi aliquet nisl, at rhoncus nibh nibh vitae orci. Vivamus ligula sapien, scelerisque vitae quam nec, faucibus auctor nisl. Cras efficitur erat ut velit aliquam fermentum.
                     </p>
                     <div className="btn-container">
-                        <button className="details-btn">
-                            <NavLink className="more-details" to='/project-single'>More Details</NavLink>
-                        </button>
-                        <button className="live-btn">
-                            <a href="#0">Live Version</a>
-                        </button>
+                        <NavLink className="btn more-details" to='/project-single'>More Details</NavLink>
+                        <a className="btn" href="#0">Live Version</a>
                     </div>
                 </div>
             </div>

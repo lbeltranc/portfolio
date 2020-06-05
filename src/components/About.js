@@ -12,10 +12,13 @@ const About = () => {
                     <ul>
                         <li><i className="fab fa-js-square"></i> JavaScript</li>
                         <li><i className="fab fa-react"></i> React</li>
-                        <li><i className="fab fa-html5"></i> HTML/CSS</li>
+                        <li><i className="fab fa-html5"></i> HTML5|CSS</li>
                         <li><i className="fab fa-sass"></i> SASS</li>
                         <li><i className="fab fa-php"></i> PHP</li>
                         <li><i className="fab fa-wordpress-simple"></i> WordPress</li>
+                        <li><i className="fab fa-adobe"></i> Photoshop|Adobe XD</li>
+
+                    
                     </ul>
                 </div>
             </div>

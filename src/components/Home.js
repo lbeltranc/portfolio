@@ -5,7 +5,7 @@ import Welcome from '../components/Welcome';
 import Contact from '../components/Contact';
 
 
-const Home = (props) => {
+const Home = () => {
     
 
     return (

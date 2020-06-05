@@ -1,30 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from '../components/Nav';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Home from '../components/Home';
 import ProjectSingle from '../components/ProjectSingle';
 import PageNotFound from '../components/PageNotFound';
-import { Link } from 'react-router-dom';
-import logo from '../images/logo.png';
-import Hamburger from '../components/Hamburguer';
+import ScrollToTop from '../utilities/ScrollToTop';
+import { addBackToTop } from 'vanilla-back-to-top'
+
+
 
 const AppRouter = () => {
 
-	const [openMenu, setOpenMenu] = useState(false);
+	useEffect(() => {
+		addBackToTop({
+			diameter: 56,
+			backgroundColor: '#660000',
+			textColor: '#ebe5e5',
+			scrollDuration: 500
+		})
+	});
 
+	
 	return (
 		<Router>
 			<div className="wrapper" >
-				<header>
-					<Link to={'/'}>
-						<img src={logo} alt="logo" className="logo" />
-					</Link>
-					<div className="burger-menu">
-						<Hamburger openMenu={openMenu} setOpenMenu={setOpenMenu}/>
-					</div>
-					<Nav openMenu={openMenu}/>
-				</header>
+				<Header />
+				<ScrollToTop />
 				<Switch>
 					<Route path={'/'} exact><Home /></Route>
 					<Route path={'/project-single'} exact><ProjectSingle /></Route>

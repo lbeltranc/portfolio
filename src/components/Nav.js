@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 const Nav = (props) => {
 
     return (
-        <nav className={props.openMenu && "display-menu"}>
+        <nav className={props.openMenu ? "display-menu" : ""}>
             <ul>
                 <li><NavLink to={'/'} exact>Home</NavLink></li>
                 <li><Link smooth to="/#about" >About</Link></li>
