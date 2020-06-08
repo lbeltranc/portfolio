@@ -1,11 +1,11 @@
 .single-project{
     background-color: $greyred;
     padding: 20px;
-    @include mq(em(800)){
+    @include mq(em(1000)){
         position: relative;
-        margin-left: 320px;
+        margin-left: 500px;
         .side-content{
-            width: 300px;
+            width: 450px;
             position: fixed;
             z-index: 1;
             top: 50%;
@@ -27,14 +27,24 @@
         margin: 20px 0;
         padding: 10px;
         
-    }   
+    }
     img {
-        width: 300px;
+        width: 550px;
         display: block;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 10px;
     }
+    .img-cont{
+        img{
+            width: 300px;
+            height: auto;
+        }
+        @include mq(em(1000)){
+            display: flex;
+        }
+    }
+    
     .tools-used {
         // border: 1px solid $darkRed;
         padding: 10px;

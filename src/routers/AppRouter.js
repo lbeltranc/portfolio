@@ -15,7 +15,7 @@ const AppRouter = () => {
 	useEffect(() => {
 		addBackToTop({
 			diameter: 56,
-			backgroundColor: '#660000',
+			backgroundColor: '#8b0000',
 			textColor: '#ebe5e5',
 			scrollDuration: 500
 		})

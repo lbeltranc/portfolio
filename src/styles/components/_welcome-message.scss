@@ -4,9 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
     color: $lightRed;
     background-color: $black;
+    @include mq(em(400)){
+        font-size: 4em;
+    }
     @include mq(em(700)){
         font-size: 5em;
     }

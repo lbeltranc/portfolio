@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import projectPicture from '../images/movie-app.jpg';
+import projectPicture from '../images/mockup-country.jpg';
 import design1 from '../images/movie-app-desktop.png';
 import design2 from '../images/movie-app-mobile.png';
 import wireframe1 from '../images/portfolio-home-desktop.jpg';
@@ -40,12 +40,16 @@ const ProjectSingle = () => {
             </section>
             <section className="wireframes">
                 <h2>Wireframes</h2>
-                <img className="project-sct-single" src={wireframe1} alt="project1" />
+                <div className="img-cont">
+                    <img className="project-sct-single" src={wireframe1} alt="project1" />
+                </div>
             </section>
             <section className="design-screenshot">
                 <h2>Design</h2>
-                <img className="project-sct-single" src={design1} alt="project1" />
-                <img className="project-sct-single" src={design2} alt="project1" />
+                <div className="img-cont">
+                    <img className="project-sct-single" src={design1} alt="project1" />
+                    <img className="project-sct-single" src={design2} alt="project1" />
+                </div>
             </section>
             <section className="code-snippet">
                 <h2>Code Snippet</h2>

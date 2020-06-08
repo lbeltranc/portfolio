@@ -18,9 +18,8 @@
             @include mq(em(1000)){
                 margin-right: 50px;
             }
-
             h3 {
-                color: $red;
+                color: $darkRed;
                 font-size: 24px;
                 @include mq(em(1000)){
                     margin: 0 auto;
@@ -30,12 +29,11 @@
                 
             }
             img{
-                width: 300px;
+                width: 450px;
                 display: block;
                 margin: 0 auto;
             }
         }
-
         .project-overview{
             @include mq(em(1000)){
                 width: 80%;

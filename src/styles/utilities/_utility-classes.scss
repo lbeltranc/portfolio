@@ -18,16 +18,16 @@
 }
 // buttons
 a.btn{
-    background-color: $darkRed;
+    background-color: $red;
     padding: 12px;
     font-size: 16px;
     font-weight: 700;
-    border: 1px solid $darkRed;
+    border: 1px solid $red;
     transition: 0.5s;
     color: $greyred;
     &:hover, &:focus, &:active {
         background-color: $greyred;
-        color: $darkRed;
+        color: $red;
         transition: 0.5s;
     }
 }

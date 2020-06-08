@@ -1,5 +1,5 @@
 import React from 'react';
-import projectPicture from '../images/movie-app.jpg';
+import projectPicture from '../images/mockup-country.jpg';
 import { NavLink } from 'react-router-dom';
 
 const ProjectsHome = () => {

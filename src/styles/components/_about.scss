@@ -7,25 +7,44 @@
         align-items: center;
     }
     img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;      
         border-radius: 50%; 
         margin-right: 5%;
+        @include mq(em(400)){
+            width: 120px;
+            height: 120px;  
+        }
+        @include mq(em(650)){
+            width: 150px;
+            height: 150px;
+        }
+
     }
     ul {
         list-style-type: none;
         .fab{
-            color: $red;
+            color: $darkRed;
         }
     }
-
     .my-skills{
-        font-size: 20px;
+        font-size: 16px;
+        @include mq(em(400)){
+            font-size: 18px;
+        }
+        @include mq(em(650)){
+            font-size: 20px; 
+        }  
     }
-
     .about-me{
         margin: 0 auto;
-        width: 90%;
-        max-width: 1000px;
+        margin-top: 20px;
+        @include mq(em(400)){
+            width: 90%;
+        }
+        @include mq(em(650)){
+            width: 70%;
+            max-width: 1000px;
+        }
     }
 }
