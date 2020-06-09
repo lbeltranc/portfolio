@@ -1,5 +1,5 @@
 import React from 'react';
-import projectPicture from '../images/mockup-country.jpg';
+// import projectPicture from '../images/mockup-country.jpg';
 import { NavLink } from 'react-router-dom';
 
 const ProjectsHome = () => {
@@ -8,7 +8,7 @@ const ProjectsHome = () => {
         <section className="projects" id="projects">
              <div className="project-item">
                 <div className="title-cont">
-                    <img className="project-sct" src={projectPicture} alt="project1" />
+                    {/* <img className="project-sct" src={projectPicture} alt="project1" /> */}
                     <h3>React</h3>
                 </div>
                 <div className="project-overview">
@@ -25,7 +25,7 @@ const ProjectsHome = () => {
             </div>
             <div className="project-item">
                 <div className="title-cont">
-                    <img className="project-sct" src={projectPicture} alt="project1" />
+                    {/* <img className="project-sct" src={projectPicture} alt="project1" /> */}
                     <h3>React</h3>
                 </div>
                 <div className="project-overview">

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import projectPicture from '../images/mockup-country.jpg';
-import design1 from '../images/movie-app-desktop.png';
-import design2 from '../images/movie-app-mobile.png';
-import wireframe1 from '../images/portfolio-home-desktop.jpg';
-import codesnip from '../images/cs1.png';
+// import projectPicture from '../images/mockup-country.jpg';
+// import design1 from '../images/movie-app-desktop.png';
+// import design2 from '../images/movie-app-mobile.png';
+// import wireframe1 from '../images/portfolio-home-desktop.jpg';
+// import codesnip from '../images/cs1.png';
 
 const ProjectSingle = () => {
     
@@ -12,7 +12,7 @@ const ProjectSingle = () => {
         <main className="single-project">
             <h1>Movie app</h1>
             <section className="side-content">
-                <img className="project-sct-single" src={projectPicture} alt="project1" />
+                {/* <img className="project-sct-single" src={projectPicture} alt="project1" /> */}
                 <p className="tools-used"> javascript, css</p>
                 <div className="btn-container">
                     <a className="btn" href="0#">Live Site</a>
@@ -41,19 +41,19 @@ const ProjectSingle = () => {
             <section className="wireframes">
                 <h2>Wireframes</h2>
                 <div className="img-cont">
-                    <img className="project-sct-single" src={wireframe1} alt="project1" />
+                    {/* <img className="project-sct-single" src={wireframe1} alt="project1" /> */}
                 </div>
             </section>
             <section className="design-screenshot">
                 <h2>Design</h2>
                 <div className="img-cont">
-                    <img className="project-sct-single" src={design1} alt="project1" />
-                    <img className="project-sct-single" src={design2} alt="project1" />
+                    {/* <img className="project-sct-single" src={design1} alt="project1" /> */}
+                    {/* <img className="project-sct-single" src={design2} alt="project1" /> */}
                 </div>
             </section>
             <section className="code-snippet">
                 <h2>Code Snippet</h2>
-                <img className="project-sct-single" src={codesnip} alt="project1" />
+                {/* <img className="project-sct-single" src={codesnip} alt="project1" /> */}
                 <p>Nam ut sollicitudin odio, ac dapibus tellus. Cras imperdiet tellus massa, non placerat dolor faucibus consequat. Fusce non luctus nisi. Ut sed eros enim. Morbi eu viverra lacus. Etiam aliquam est non dolor vulputate, nec consequat metus facilisis. Curabitur dignissim massa vel placerat euismod.</p>
             </section>
         </main>
