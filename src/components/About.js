@@ -17,8 +17,6 @@ const About = () => {
                         <li><i className="fab fa-php"></i> PHP</li>
                         <li><i className="fab fa-wordpress-simple"></i> WordPress</li>
                         <li><i className="fab fa-adobe"></i> Photoshop|Adobe XD</li>
-
-                    
                     </ul>
                 </div>
             </div>

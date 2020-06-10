@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useParams } from "react-router-dom";
+import projectsData from '../content/projects.json';
 // import projectPicture from '../images/mockup-country.jpg';
 // import design1 from '../images/movie-app-desktop.png';
 // import design2 from '../images/movie-app-mobile.png';
@@ -7,6 +9,8 @@ import React, { useState } from 'react';
 
 const ProjectSingle = () => {
     
+    let { id } = useParams();
+    console.log(projectsData.id);
 
     return (
         <main className="single-project">

@@ -1,110 +1,128 @@
 [
     {
         "id": "pcountry",
-        "mockup": "../images/mockups/mockup-country.jpg",
+        "mockup": "mockup-country.jpg",
         "title": "Discover Tokyo",
         "overview": "Responsive website that showcase the major attractions and touristic places of the city of Tokyo, capital city of Japan.",
         "tools": [
-            "html", "css", "javascript"
+            {"name": "html", "icon": "html"},
+            {"name": "css", "icon": "html5"},
+            {"name": "javascript", "icon": "js-square"}
         ],
         "members": [],
         "development": "For this site, first I made a research about Tokyo and what can be added to the website. Then I made some drawings to have the general layout and design and finished doing the HTML/CSS and JavaScript code.",
         "wireframes": [],
         "design_screenshot": [],
         "code_snip": [
-            "../images/code-snippet/cs-country.png"
+            "cs-country.png"
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/tokyo/",
         "github": "https://github.com/lbeltranc/tokyo"
     },
     {
         "id": "pmovie",
-        "mockup": "../images/mockups/mockup-movie.jpg",
+        "mockup": "mockup-movie.jpg",
         "title": "The Movie Box",
         "overview": "React app created to display the movie database where users can look at the list of different movies depending of the filter selected. Also, users are able to see in detail the information of each movie and add them to their favorites section.",
         "tools": [
-            "react", "sass", "html", "javascript", "photpshop"
+            {"name": "react", "icon": "react"},
+            {"name": "sass", "icon": "sass"},
+            {"name": "html", "icon": "html5"},
+            {"name": "javascript", "icon": "js-square"},
+            {"name": "photpshop", "icon": "adobe"}
         ],
         "members": [],
         "development": "First, I made a mockup design using photoshop for the basic functionality of the site, then I made basic html and css. Once the styling was done, I made the react code to get the information form the API and displayed it on the website.",
         "wireframes": [],
         "design_screenshot": [
-            "../images/design-sc/design-sc-desktop.jpg",
-            "../images/design-sc/design-sc-mobile.jpg"
+            "design-sc-desktop.jpg",
+            "design-sc-mobile.jpg"
         ],
         "code_snip": [
-            "../images/code-snippet/cs-movie.png"
+            "cs-movie.png"
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/the-movie-box/",
         "github": "https://github.com/lbeltranc/the-movie-box"
     },
     {
         "id": "pbusiness",
-        "mockup": "../images/mockups/mockup-business.jpg",
+        "mockup": "mockup-business.jpg",
         "title": "LTF Fast Food",
         "overview": "Business brochure for the fast food restaurant LTF where people can find their menu, the different locations in Vancouver as well as the promotions for each week.",
         "tools": [
-            "html", "sass", "javascript", "github", "adobe xd"
+            {"name": "html", "icon": "html5"},
+            {"name": "sass", "icon": "sass"},
+            {"name": "javascript", "icon": "js-square"},
+            {"name": "github", "icon": "github"},
+            {"name": "photpshop", "icon": "adobe"}
         ],
         "members": [
             "Tina Liu", "Faye Liu"
         ],
         "development": "The first step was to meet with my classmates and decide what kind of business we were going to do. After choosing the type of business we made our wireframes to decide how the design and layout was going to be. Once we had decided everything, we divided the project so each of us was going to code a different portion of the website.",
         "wireframes": [
-           "../images/wireframes/business/bb-wf-about.png",
-           "../images/wireframes/business/bb-wf-contact.png",
-           "../images/wireframes/business/bb-wf-footer.png",
-           "../images/wireframes/business/bb-wf-home.png",
-           "../images/wireframes/business/bb-wf-menu.png",
-           "../images/wireframes/business/bb-wf-us.png"
+           "bb-wf-about.png",
+           "bb-wf-contact.png",
+           "bb-wf-footer.png",
+           "bb-wf-home.png",
+           "bb-wf-menu.png",
+           "bb-wf-us.png"
         ],
         "design_screenshot": [],
         "code_snip": [
-            "../images/code-snippet/cs-bb1png.png",
-            "../images/code-snippet/cs-bb2png.png"
+            "cs-bb1png.png",
+            "cs-bb2png.png"
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/business-brochure/",
         "github": "https://github.com/lbeltranc/business-brochure"
     },
     {
         "id": "pgame",
-        "mockup": "../images/mockups/mockup-game.jpg",
+        "mockup": "mockup-game.jpg",
         "title": "Tic Tac Toe in Space",
         "overview": "Interactive game based in tic tac toe where 2 players take turns marking the spaces in a 3×3 grid until one of them places three of their marks in a horizontal, vertical, or diagonal.",
         "tools": [
-            "javascript", "html", "css"
+            {"name": "javascript", "icon": "js-square"},
+            {"name": "html", "icon": "html5"},
+            {"name": "sass", "icon": "sass"}
         ],
         "members": [],
         "development": "After deciding the type of game I was going to do I started to think what theme I was going to do the game about and how the layout was going to be. After that I coded the jQuery code to make the game work.",
         "wireframes": [],
         "design_screenshot": [],
         "code_snip": [
-            "../images/code-snippet/cs-game1.png"
+            "cs-game1.png"
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/tictactoe/",
         "github": "https://github.com/lbeltranc/tictactoe"
     },
     {
         "id": "pcapstone",
-        "mockup": "../images/mockups/mockup-country.jpg",
+        "mockup": "mockup-country.jpg",
         "title": "Fitness Master",
         "overview": "Site created to display all the information related to the business Fitness Master. The website shows all the different sections, such as the type of programs, the trainers bios and a blog page where users can find different fitness tips.",
         "tools": [
-            "wordpress", "html", "sass", "php", "javascript", "github", "adobe xd"
+            {"name": "wordpress", "icon": "wordpress-simple"},
+            {"name": "html", "icon": "html5"},
+            {"name": "sass", "icon": "sass"},
+            {"name": "php", "icon": "php"},
+            {"name": "javascript", "icon": "js-square"},
+            {"name": "github", "icon": "github"},
+            {"name": "photpshop", "icon": "adobe"}
         ],
         "members": [
             "Tina Liu", "Faye Liu", "Shawn Chen"
         ],
         "development": "After we decided the business we were going to make; we made the content plan and the development plan to start creating the content and configuring the back-end of WordPress.",
         "wireframes": [
-           "../images/wireframes/capstone/cp-wf-about.png",
-           "../images/wireframes/capstone/cp-wf-blog.png",
-           "../images/wireframes/capstone/cp-wf-contact.png",
-           "../images/wireframes/capstone/cp-wf-home.png",
-           "../images/wireframes/capstone/cp-wf-post.png",
-           "../images/wireframes/capstone/cp-wf-program.png",
-           "../images/wireframes/capstone/cp-wf-sucess.png",
-           "../images/wireframes/capstone/cp-wf-trainer.png"
+           "cp-wf-about.png",
+           "cp-wf-blog.png",
+           "cp-wf-contact.png",
+           "cp-wf-home.png",
+           "cp-wf-post.png",
+           "cp-wf-program.png",
+           "cp-wf-sucess.png",
+           "cp-wf-trainer.png"
         ],
         "design_screenshot": [],
         "code_snip": [
@@ -114,23 +132,27 @@
     },
     {
         "id": "portfolio",
-        "mockup": "../images/mockups/mockup-game.jpg",
+        "mockup": "mockup-game.jpg",
         "title": "Portfolio",
         "overview": "Website created to showcase my skills and all the different projects that I have done while studying Web development and the process that I do for each one of them.",
         "tools": [
-            "react", "html", "sass", "javascript", "adobe xd"
+            {"name": "react", "icon": "react"},
+            {"name": "html", "icon": "html5"},
+            {"name": "sass", "icon": "sass"},
+            {"name": "javascript", "icon": "js-square"},
+            {"name": "photpshop", "icon": "adobe"}
         ],
         "members": [],
         "development": "I started by looking at different portfolios to get inspiration, after that I started doing the wireframes to design how the design was going to be. I decided to make it using React to make it more interactive and easier to use.",
         "wireframes": [
-            "../images/wireframes/portfolio/p-wr-home-d.png",
-            "../images/wireframes/portfolio/p-wr-home-m.png",
-            "../images/wireframes/portfolio/p-wr-project-d.png",
-            "../images/wireframes/portfolio/p-wr-project-m.png"
+            "p-wr-home-d.png",
+            "p-wr-home-m.png",
+            "p-wr-project-d.png",
+            "p-wr-project-m.png"
         ],
         "design_screenshot": [],
         "code_snip": [
-            "../images/code-snippet/cs-game1.png"
+            "cs-game1.png"
         ],
         "live_site": "https://laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/portfolio"
