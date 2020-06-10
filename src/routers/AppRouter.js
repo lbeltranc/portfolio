@@ -20,8 +20,6 @@ const AppRouter = () => {
 			scrollDuration: 500
 		})
 	});
-
-	
 	return (
 		<Router>
 			<div className="wrapper" >
@@ -29,7 +27,7 @@ const AppRouter = () => {
 				<ScrollToTop />
 				<Switch>
 					<Route path={'/'} exact><Home /></Route>
-					<Route path={'/project-single'} exact><ProjectSingle /></Route>
+					<Route path={'/project-single/:id'} exact><ProjectSingle /></Route>
 					<Route path={'/*'}><PageNotFound /></Route>
 				</Switch>
 				<Footer />

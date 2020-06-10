@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import projectsData from '../content/projects.json';
 // import projectPicture from '../images/mockup-country.jpg';
@@ -10,56 +10,92 @@ import projectsData from '../content/projects.json';
 const ProjectSingle = () => {
     
     let { id } = useParams();
-    console.log(projectsData.id);
+    
+    const [projectSingleData, setProjectSingleData] = useState();
+
+    useEffect(() => {
+        setProjectSingleData (projectsData.find(item => item.id === id));
+    });
+
 
     return (
         <main className="single-project">
-            <h1>Movie app</h1>
-            <section className="side-content">
-                {/* <img className="project-sct-single" src={projectPicture} alt="project1" /> */}
-                <p className="tools-used"> javascript, css</p>
-                <div className="btn-container">
-                    <a className="btn" href="0#">Live Site</a>
-                    <a className="btn" href="0#">GitHub</a>
-                </div>
-            </section>
-            <section className="project-overview">
-                <h2>Overview</h2>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit in odio a pretium. Sed suscipit sapien quis auctor ultricies. Ut nec purus posuere, luctus est vitae, luctus urna. Quisque ut quam erat. Nulla ac posuere nunc. Donec eu aliquam erat. Nam vehicula nisi a orci imperdiet vestibulum. Nullam hendrerit porta tellus ut finibus. Praesent mattis massa rutrum, iaculis nisl non, tristique neque.  
-                </p>
-            </section>
-            <section className="members">
-                <h2>Memebers</h2>
-                <ul>
-                    <li>Laura</li>
-                    <li>Laura 2</li>
-                </ul>
-            </section>
-            <section className="development">
-                <h2>Development</h2>
-                <p>
-                Pellentesque lorem odio, vulputate sit amet neque ut, porttitor varius metus. Etiam porttitor nec justo eget pellentesque. Proin eget dolor ligula. Sed et convallis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis hendrerit tellus. Donec non auctor ex. Nulla rutrum quam vel erat porta, ac tempus dolor luctus. Vivamus eget purus porttitor, cursus arcu vel, pulvinar n 
-                </p>
-            </section>
-            <section className="wireframes">
-                <h2>Wireframes</h2>
-                <div className="img-cont">
-                    {/* <img className="project-sct-single" src={wireframe1} alt="project1" /> */}
-                </div>
-            </section>
-            <section className="design-screenshot">
-                <h2>Design</h2>
-                <div className="img-cont">
-                    {/* <img className="project-sct-single" src={design1} alt="project1" /> */}
-                    {/* <img className="project-sct-single" src={design2} alt="project1" /> */}
-                </div>
-            </section>
-            <section className="code-snippet">
-                <h2>Code Snippet</h2>
-                {/* <img className="project-sct-single" src={codesnip} alt="project1" /> */}
-                <p>Nam ut sollicitudin odio, ac dapibus tellus. Cras imperdiet tellus massa, non placerat dolor faucibus consequat. Fusce non luctus nisi. Ut sed eros enim. Morbi eu viverra lacus. Etiam aliquam est non dolor vulputate, nec consequat metus facilisis. Curabitur dignissim massa vel placerat euismod.</p>
-            </section>
+            {projectSingleData &&
+                <div className="single-page-container">  
+                    <h1>{projectSingleData.title}</h1>
+                    <section className="side-content">
+                        <img className="project-mockup-single" src={`../assets/images/mockups/${projectSingleData.mockup}`} alt={projectSingleData.title} />
+                        <div className="tools-used-cont">
+                            {projectSingleData.tools.map((tool) => {
+                                return(
+                                <span className="tools-used" key={tool.name}><i className={`fab fa-${tool.icon}`} key={tool.icon}></i> {tool.name}</span>
+                                )
+                            }) }
+                        </div>
+                        <div className="btn-container">
+                        <a className="btn" href={projectSingleData.live_site} target="_blank" rel="noopener noreferrer">Live Version</a>
+                        <a className="btn" href={projectSingleData.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </section>
+                    <section className="project-overview">
+                        <h2>Overview</h2>
+                        <p>{projectSingleData.overview}</p>
+                    </section>
+                    {projectSingleData.members.length !== 0 &&
+                        <section className="members">
+                            <h2>Memebers</h2>
+                            <ul>
+                                {projectSingleData.members.map((member) => {
+                                    return(
+                                        <li key={member}>{member}</li>
+                                    )
+                                }) }
+                            </ul>
+                        </section>
+                    }
+                    <section className="development">
+                        <h2>Development</h2>
+                        <p>{projectSingleData.development}</p>
+                    </section>
+                    {projectSingleData.wireframes.length !== 0 &&
+                        <section className="wireframes">
+                            <h2>Wireframes</h2>
+                            <div className="img-cont">
+                                {projectSingleData.wireframes.map((wireframe) => {
+                                    return(
+                                    <img className="project-wireframes-single" key={wireframe} src={`../assets/images/wireframes/${wireframe}`} alt={wireframe} />
+                                    )
+                                }) }
+                            </div>
+                        </section>
+                    }
+                    {projectSingleData.design_screenshots.length !== 0 &&
+                        <section className="design-screenshot">
+                            <h2>Design</h2>
+                            <div className="img-cont">
+                                {projectSingleData.design_screenshots.map((design_screenshots) => {
+                                    return(
+                                    <img className="design-screenshot-single" key={design_screenshots} src={`../assets/images/design-sc/${design_screenshots}`} alt={design_screenshots} />
+                                    )
+                                }) }
+                            </div>
+                        </section>
+                    }
+                    <section className="code-snippet">
+                        <h2>Code Snippet</h2>
+                        {projectSingleData.code_snip.map((codeSnip) => {
+                            return(
+                                <div className="code-snip-cont">
+                                    <p className="project-code-snippet-name" key={codeSnip.description}>{codeSnip.description}</p>
+                                    <div className="img-cont">
+                                        <img className="project-code-snippet-img" key={codeSnip.image} src={`../assets/images/code-snippet/${codeSnip.image}`} alt={codeSnip.image} />
+                                    </div>
+                                </div>
+                            )
+                        }) }
+                    </section>
+                </div> 
+            }
         </main>
     );
 }
