@@ -16,7 +16,7 @@
         "code_snip": [
             {"description": "Code used for the creation of the navigation bar boxes.", "image": "cs-country.png"}
         ],
-        "live_site": "https://lbeltran.bcitwebdeveloper.ca/tokyo/",
+        "live_site": "https://country.laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/tokyo"
     },
     {
@@ -41,7 +41,7 @@
         "code_snip": [
             {"description": "Code used for the creation of each individual movie page.", "image": "cs-movie.png"}
         ],
-        "live_site": "https://lbeltran.bcitwebdeveloper.ca/the-movie-box/",
+        "live_site": "https://movie-app.laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/the-movie-box"
     },
     {
@@ -72,7 +72,7 @@
         "code_snip": [
             {"description": "Code used for the menu page, which was the one I worked on it.", "image": "cs-bb.png"}
         ],
-        "live_site": "https://lbeltran.bcitwebdeveloper.ca/business-brochure/",
+        "live_site": "https://business-brochure.laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/business-brochure"
     },
     {
@@ -92,7 +92,7 @@
         "code_snip": [
             {"description": "Code used for the tic tac toe board at the beginning and also while users play the game.", "image": "cs-game1.png"}
         ],
-        "live_site": "https://lbeltran.bcitwebdeveloper.ca/tictactoe/",
+        "live_site": "https://game.laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/tictactoe"
     },
     {
