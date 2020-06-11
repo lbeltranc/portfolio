@@ -70,7 +70,7 @@
         ],
         "design_screenshots": [],
         "code_snip": [
-            {"description": "Code used for the menu page.", "image": "cs-bb.png"}
+            {"description": "Code used for the menu page, which was the one I worked on it.", "image": "cs-bb.png"}
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/business-brochure/",
         "github": "https://github.com/lbeltranc/business-brochure"
@@ -90,7 +90,7 @@
         "wireframes": [],
         "design_screenshots": [],
         "code_snip": [
-            {"description": "Code used for the tic tac toe board.", "image": "cs-game1.png"}
+            {"description": "Code used for the tic tac toe board at the beginning and also while users play the game.", "image": "cs-game1.png"}
         ],
         "live_site": "https://lbeltran.bcitwebdeveloper.ca/tictactoe/",
         "github": "https://github.com/lbeltranc/tictactoe"
@@ -114,14 +114,12 @@
         ],
         "development": "After we decided the business we were going to make; we made the content plan and the development plan to start creating the content and configuring the back-end of WordPress.",
         "wireframes": [
-           "capstone/cp-wf-about.png",
+            "capstone/cp-wf-home.png",
+           "capstone/cp-wf-3.png",
            "capstone/cp-wf-blog.png",
            "capstone/cp-wf-contact.png",
-           "capstone/cp-wf-home.png",
-           "capstone/cp-wf-post.png",
-           "capstone/cp-wf-program.png",
-           "capstone/cp-wf-sucess.png",
-           "capstone/cp-wf-trainer.png"
+           "capstone/cp-wf-2.png",
+           "capstone/cp-wf-sucess.png"
         ],
         "design_screenshots": [],
         "code_snip": [
@@ -132,7 +130,7 @@
     },
     {
         "id": "portfolio",
-        "mockup": "mockup-game.jpg",
+        "mockup": "mockup-portfolio.jpg",
         "title": "Portfolio",
         "overview": "Website created to showcase my skills and all the different projects that I have done while studying Web development and the process that I do for each one of them.",
         "tools": [
@@ -146,13 +144,12 @@
         "development": "I started by looking at different portfolios to get inspiration, after that I started doing the wireframes to design how the design was going to be. I decided to make it using React to make it more interactive and easier to use.",
         "wireframes": [
             "portfolio/p-wr-home-d.png",
-            "portfolio/p-wr-home-m.png",
             "portfolio/p-wr-project-d.png",
-            "portfolio/p-wr-project-m.png"
+            "portfolio/p-wr-m.png"
         ],
         "design_screenshots": [],
         "code_snip": [
-            {"description": "Code used to create the content for a single project page.", "image": "cs-game1.png"}
+            {"description": "Code used to create the content for the project section on the home page.", "image": "cs-p.png"}
         ],
         "live_site": "https://laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/portfolio"

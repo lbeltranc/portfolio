@@ -36,7 +36,10 @@
         }
         .project-overview{
             @include mq(em(700)){
-                width: 600px;
+                width: 80%;
+            }
+            @include mq(em(900)){
+                width: 40%;
             }
             
         }
