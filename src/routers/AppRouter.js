@@ -8,8 +8,6 @@ import PageNotFound from '../components/PageNotFound';
 import ScrollToTop from '../utilities/ScrollToTop';
 import { addBackToTop } from 'vanilla-back-to-top'
 
-
-
 const AppRouter = () => {
 
 	useEffect(() => {
@@ -19,7 +17,7 @@ const AppRouter = () => {
 			textColor: '#ebe5e5',
 			scrollDuration: 500
 		})
-	});
+	},[]);
 	return (
 		<Router>
 			<div className="wrapper" >

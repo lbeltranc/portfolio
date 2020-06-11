@@ -26,6 +26,8 @@ a.btn{
     transition: 0.5s;
     color: $greyred;
     margin-top: 5px;
+    width: 130px;
+    text-align: center;
     &:hover, &:focus, &:active {
         background-color: $greyred;
         color: $darkRed;

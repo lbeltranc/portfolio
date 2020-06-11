@@ -14,5 +14,4 @@ const PageNotFound = () => (
 	</main>
 );
 
-
 export default PageNotFound;

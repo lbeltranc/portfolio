@@ -1,11 +1,6 @@
 import React, { useState , useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import projectsData from '../content/projects.json';
-// import projectPicture from '../images/mockup-country.jpg';
-// import design1 from '../images/movie-app-desktop.png';
-// import design2 from '../images/movie-app-mobile.png';
-// import wireframe1 from '../images/portfolio-home-desktop.jpg';
-// import codesnip from '../images/cs1.png';
 
 const ProjectSingle = () => {
     
@@ -15,8 +10,7 @@ const ProjectSingle = () => {
 
     useEffect(() => {
         setProjectSingleData (projectsData.find(item => item.id === id));
-    });
-
+    }, [id]);
 
     return (
         <main className="single-project">
@@ -43,7 +37,7 @@ const ProjectSingle = () => {
                     </section>
                     {projectSingleData.members.length !== 0 &&
                         <section className="members">
-                            <h2>Memebers</h2>
+                            <h2>Members</h2>
                             <ul>
                                 {projectSingleData.members.map((member) => {
                                     return(
@@ -85,10 +79,10 @@ const ProjectSingle = () => {
                         <h2>Code Snippet</h2>
                         {projectSingleData.code_snip.map((codeSnip) => {
                             return(
-                                <div className="code-snip-cont">
-                                    <p className="project-code-snippet-name" key={codeSnip.description}>{codeSnip.description}</p>
+                                <div className="code-snip-cont" key={codeSnip}>
+                                    <p className="project-code-snippet-name" >{codeSnip.description}</p>
                                     <div className="img-cont">
-                                        <img className="project-code-snippet-img" key={codeSnip.image} src={`../assets/images/code-snippet/${codeSnip.image}`} alt={codeSnip.image} />
+                                        <img className="project-code-snippet-img" src={`../assets/images/code-snippet/${codeSnip.image}`} alt={codeSnip.image} />
                                     </div>
                                 </div>
                             )

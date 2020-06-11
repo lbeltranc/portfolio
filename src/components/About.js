@@ -5,7 +5,6 @@ const About = () => {
 
     return (
         <section className="about" id="about">
-            {/* <h2>About</h2> */}
             <div className="two-col">
                 <img className="my-pciture" src={myPicture} alt="me" />
                 <div className="my-skills">
@@ -21,11 +20,10 @@ const About = () => {
                 </div>
             </div>
             <div className="about-me">
-                <p>My name is Laura, I’m from Colombia and I have a bachelor in Electronic Engineering but I'm transitioning into Front-End Web Development. My passion is coding but I enjoy designing. I have experience with customer service and problem solving as I previously worked in Technical support.<br />
+                <p>My name is Laura, I’m electronic engineer from Colombia and I'm transitioning into Front-End Web Development. My passion is coding but I enjoy designing. I have experience with customer service and problem solving as I previously worked in Technical support.<br />
                 I love traveling and meeting new places and new people. My favorite hobbies are to watch sci-fi movies and series.</p>
             </div>
         </section>
     );
 }
-
 export default About;

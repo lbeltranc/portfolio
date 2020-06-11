@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Burger from 'react-css-burger';
-
 
 const Hamburguer = (props) => {
     
@@ -11,7 +10,6 @@ const Hamburguer = (props) => {
             props.setOpenMenu(true); 
         }
     }
-
     return (
         <Burger
             onClick={handleHamburgerMenu}

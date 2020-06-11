@@ -31,8 +31,6 @@ const ProjectsHome = () => {
             </section>
         );
     })
-
-
 }
 
 export default ProjectsHome;
