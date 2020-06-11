@@ -5,7 +5,6 @@ import projectsData from '../content/projects.json';
 const ProjectsHome = () => {
     
     return projectsData.map((item) => {
-        console.log(item.members)
         return (
             <section key={item.id} className="projects" id="projects">
                  <div className="project-item">
