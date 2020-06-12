@@ -41,7 +41,7 @@
         "code_snip": [
             {"description": "Code used for the creation of each individual movie page.", "image": "cs-movie.png"}
         ],
-        "live_site": "https://movie-app.laurabeltranc.com/",
+        "live_site": "https://movie.laurabeltranc.com/",
         "github": "https://github.com/lbeltranc/the-movie-box"
     },
     {

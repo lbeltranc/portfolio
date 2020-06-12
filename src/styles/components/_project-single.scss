@@ -41,9 +41,11 @@
         @include mq(em(1000)){
             display: flex;
             flex-wrap: wrap;
+            align-items: flex-start;
             img {
-                width: 60%;
-                padding: 20px;
+                width: 300px;
+                min-height: 100%;
+                height: auto;
             }
         }
     }

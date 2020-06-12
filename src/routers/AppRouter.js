@@ -18,6 +18,7 @@ const AppRouter = () => {
 			scrollDuration: 500
 		})
 	},[]);
+
 	return (
 		<Router>
 			<div className="wrapper" >
