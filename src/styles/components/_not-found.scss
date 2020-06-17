@@ -1,0 +1,30 @@
+.not-found{
+    background-color: $black;
+    color: $greyred;
+    position: relative;
+    .not-found-cont{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .page-info{
+            margin-bottom: 50px;
+        }
+        h2{
+           font-size: 40px; 
+        }
+        i{
+            font-size: 60px;  
+        }
+        .btn{
+            text-transform: uppercase;
+            &:hover, &:focus, &:active {
+                background-color: $black;
+                color: $greyred;
+                transition: 0.5s;
+            }
+        }
+    }
+}
