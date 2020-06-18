@@ -1,6 +1,6 @@
 .not-found{
     background-color: $black;
-    color: $greyred;
+    color: $lightRed;
     position: relative;
     .not-found-cont{
         margin: 0;
@@ -20,9 +20,12 @@
         }
         .btn{
             text-transform: uppercase;
+            background-color: $lightRed;
+            color: $black;
+            border: 1px solid $lightRed;
             &:hover, &:focus, &:active {
                 background-color: $black;
-                color: $greyred;
+                color: $lightRed;
                 transition: 0.5s;
             }
         }

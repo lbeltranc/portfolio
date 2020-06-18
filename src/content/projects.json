@@ -97,7 +97,7 @@
     },
     {
         "id": "pcapstone",
-        "mockup": "mockup-country.jpg",
+        "mockup": "mockup-capstone.jpg",
         "title": "Fitness Master",
         "overview": "Site created to display all the information related to the business Fitness Master. The website shows all the different sections, such as the type of programs, the trainers bios and a blog page where users can find different fitness tips.",
         "tools": [
@@ -123,9 +123,9 @@
         ],
         "design_screenshots": [],
         "code_snip": [
-            {"description": "something", "image": "cs-game1.png"}
+            {"description": "Code used to create the single trainer page.", "image": "code-capstone.png"}
         ],
-        "live_site": "#0",
+        "live_site": "https://fitnessmaster.bcitwebdeveloper.ca/",
         "github": "#0"
     },
     {
