@@ -45,34 +45,22 @@
         "github": "https://github.com/lbeltranc/the-movie-box"
     },
     {
-        "id": "pbusiness",
-        "mockup": "mockup-business.jpg",
-        "title": "LTF Fast Food",
-        "overview": "Business brochure for the fast food restaurant LTF where people can find their menu, the different locations in Vancouver as well as the promotions for each week.",
+        "id": "plaba",
+        "mockup": "mockup-laba.jpg",
+        "title": "Construcciones LABA",
+        "overview": "Business brochure for the real state agency Constructiones LABA where people can check the the different projects available and the details of each one.",
         "tools": [
+            {"name": "wordpress", "icon": "wordpress-simple"},
             {"name": "html", "icon": "html5"},
-            {"name": "sass", "icon": "sass"},
-            {"name": "javascript", "icon": "js-square"},
-            {"name": "github", "icon": "github"},
+            {"name": "php", "icon": "php"},
             {"name": "photpshop", "icon": "adobe"}
         ],
-        "members": [
-            "Tina Liu", "Faye Liu"
-        ],
-        "development": "The first step was to meet with my classmates and decide what kind of business we were going to do. After choosing the type of business we made our wireframes to decide how the design and layout was going to be. Once we had decided everything, we divided the project so each of us was going to code a different portion of the website.",
-        "wireframes": [
-           "business/bb-wf-about.png",
-           "business/bb-wf-contact.png",
-           "business/bb-wf-footer.png",
-           "business/bb-wf-home.png",
-           "business/bb-wf-menu.png",
-           "business/bb-wf-us.png"
-        ],
+        "members": [],
+        "development": "",
+        "wireframes": [],
         "design_screenshots": [],
-        "code_snip": [
-            {"description": "Code used for the menu page, which was the one I worked on it.", "image": "cs-bb.png"}
-        ],
-        "live_site": "https://business-brochure.laurabeltranc.com/",
+        "code_snip": [ ],
+        "live_site": "https://construccioneslaba.co/",
         "github": "https://github.com/lbeltranc/business-brochure"
     },
     {
